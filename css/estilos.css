@@ -2,11 +2,68 @@ body{
   background-color: rgb(86, 86, 85);
 }
 
+#Page1 {
+  display: block;
+}
+
+#Page2 {
+  display: none;
+}
+
+#Page3 {
+  font-family: verdana;
+  margin: 10px auto;
+  padding: 30px;
+  background: green;
+  font-size: 14px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+}
+
+#navegador {
+  text-align: center;
+}
+
+#navegador ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(62, 186, 218)
+}
+
+#navegador ul li {
+  float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#navegador ul li a {
+  color: white;
+}
+
 .conth1{
   border: 2px solid rgb(101, 157, 247);
   background-image: linear-gradient(to right, rgb(134, 126, 126) , rgb(75, 161, 210));
   }
-.container{
+  
+.container1{
+  display: flex;
+  background: rgba(120, 117, 119, 0.533);
+}
+
+.container2{
+  display: flex;
+  background: rgba(120, 117, 119, 0.533);
+}
+
+.container3{
   display: flex;
   background: rgba(120, 117, 119, 0.533);
 }
@@ -15,7 +72,7 @@ body{
   background-color: lightgrey;
   border: 2px solid rgb(101, 157, 247);
   padding: 5px;
-  padding-bottom: 265px;
+  padding-bottom: 20px;
   margin: 5px;
   text-align: left;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -34,6 +91,16 @@ body{
 }
 
 .perfil{
+  flex-basis: 1000px;
+  background-color: lightgrey;
+  border: 2px solid rgb(101, 157, 247);
+  padding-top: 10px;
+  padding: 15px;
+  margin: 5px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.perfil2{
   flex-basis: 1000px;
   background-color: lightgrey;
   border: 2px solid rgb(101, 157, 247);
@@ -86,23 +153,3 @@ button {
 button:hover {
     background: rgb(152, 176, 152);
   }
-ul a {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(62, 186, 218)
-}
-
-li {
-  float: inline-end;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
